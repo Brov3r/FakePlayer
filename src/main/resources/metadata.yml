@@ -1,0 +1,15 @@
+name: "FakePlayer Plugin"
+id: "fake-player"
+description: "FakePlayer Plugin"
+author: "Brov3r"
+version: "%PROJECT_VERSION%"
+environment: "server"
+license: "MIT"
+contacts: "https://github.com/brov3r/"
+entrypoints:
+  - "com.brov3r.fakeplayer.Main"
+patches:
+  - "com.brov3r.fakeplayer.patches.PatchGameServer"
+dependencies:
+  pz-core: ">=41.78.16"
+  avrix-loader: ">=1.1.1"
